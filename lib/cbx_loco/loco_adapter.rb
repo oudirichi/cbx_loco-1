@@ -209,7 +209,7 @@ module CbxLoco
     def self.create_directory(path)
       print "Creating \"#{path}\" folder... "
 
-      Dir.mkdir(path)
+      Dir.mkdir(path);
       puts "Done!".colorize(:green)
 
       print "Touch open \".keep\" file... "
