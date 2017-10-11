@@ -212,7 +212,7 @@ module CbxLoco
       Dir.mkdir(path)
       puts "Done!".colorize(:green)
 
-      print "Creating \".keep\" file... "
+      print "Touch \".keep\" file... "
       file_path = CbxLoco.file_path path, ".keep"
       FileUtils.touch(file_path)
       # f = File.new file_path, "w:UTF-8"
