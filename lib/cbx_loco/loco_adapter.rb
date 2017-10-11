@@ -214,9 +214,12 @@ module CbxLoco
 
       print "Touch \".keep\" file... "
       file_path = CbxLoco.file_path path, ".keep"
-      FileUtils.touch(file_path)
+      # FileUtils.touch(file_path)
+
       # f = File.new file_path, "w:UTF-8"
       # f.close
+
+      File.open file_path, "w" {} # empty to auto-close file
       puts "Done!".colorize(:green)
     end
 
