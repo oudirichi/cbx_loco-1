@@ -210,10 +210,12 @@ module CbxLoco
       print "Creating \"#{path}\" folder... "
 
       FileUtils.mkdir_p(path)
+      puts "Done!".colorize(:green)
+
+      print "Creating \".keep\" file... "
       file_path = CbxLoco.file_path path, ".keep"
       f = File.new file_path, "w:UTF-8"
       f.close
-
       puts "Done!".colorize(:green)
     end
 
